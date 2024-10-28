@@ -1,0 +1,191 @@
+.order {
+
+    background-image: url(../img/body-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        text-align: center;
+        padding: 150px 0;
+    }
+
+    &__heading-description {
+        margin-bottom: $big;
+        color: $gray;
+    }
+}
+
+.checklist {
+    margin-bottom: $big;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    &__item {
+        position: relative;
+        width: 209px;
+    }
+
+    &__dots {
+        position: absolute;
+        top: 50px;
+        left: 164px;
+    }
+
+    &__info {
+        padding-top: 20px;
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+.subheading {
+    margin-bottom: $standard;
+    font-family: $extra;
+    font-size: 36px;
+    color: $white;
+}
+
+.input-box {
+    position: relative;
+}
+
+.error-label {
+    
+    color: #ff5c00 !important;
+    font-size: 10px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+.input {
+    padding: 12px 10px;
+    margin: 0 15px 15px 0;
+    width: 370px;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid $white;
+    outline: none;
+    color: #272733;
+    transition: background-color $animate;
+
+    &:focus {
+        background-color: #3d4050d9;
+        color: $white;
+        transition: background-color $animate;
+    }
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.inputs-row {
+    margin-bottom: $standard;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-file-row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.diagramm {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.diagramm__info {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+}
+
+.diagramm__main {
+    position: relative;
+}
+
+.diagramm__bar {
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    border: 1px solid $white;
+    background-color: $gray;
+}
+
+.diagramm__point {
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+    max-width: 370px;
+    width: 100%;
+}
+
+.input-file span {
+	padding: 15px 97px 12px 120px;
+	display: inline-block;
+    width: 100%;
+	min-height: 48px;
+	position: relative;
+	outline: none;
+	border: 2px solid $accent;
+	text-decoration: none;
+	text-align: center;
+    font-family: 'Lato Semi Bold';
+	font-size: 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	color: $black;
+	background-color: $white;
+	transition: background-color 0.2s;
+    background-image: url(../img/add-file.svg);
+    background-repeat: no-repeat;
+    background-position: 97px center;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+.input-file:hover span {
+	background-color: $accent;
+}
+
+.button-form {
+    padding: 18px;
+    max-width: 370px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-form:disabled {
+    background-color: $gray;
+    border: 2px solid $gray;
+    cursor: default;
+    opacity: 0.5;
+  }

@@ -1,0 +1,121 @@
+@media screen and (max-width: 1170px) {
+
+    .checklist {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    &__dots {
+        display: none;
+    }
+}
+
+    .add-file-row {
+        justify-content: center;
+    }
+
+    .footer {
+        &__list {
+            padding: 0 10px;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        &__wrapper {
+            padding: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .input-file span {
+        padding: 15px 25% 12px 34%;
+        background-position: 29% center;
+    }
+
+    .header {
+
+        &__menu {
+            gap: 15px;
+            font-size: 14px;
+            justify-content: center;
+        }
+
+        &__wrapper {
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+
+    .about {
+
+        &__wrapper {
+            padding: 40% 0 20%;
+            max-width: 780px;
+            text-align: center;
+        }
+
+        &__list {
+            text-align: left;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+
+    .heading {
+        margin-bottom: 15%;
+        font-family: "Lato Bold";
+        font-size: 30px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .order {
+        &__heading-description {
+            margin-bottom: 40px;
+            font-size: 14px;            
+        }
+    }
+
+    .order__wrapper {
+        text-align: center;
+        padding: 75px 0;
+    }
+
+    .diagramm__info {
+        font-size: 14px;
+    }
+
+    .inputs-row {
+        gap: 10px;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .choices {
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+}
+

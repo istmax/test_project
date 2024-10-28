@@ -1,0 +1,17 @@
+@mixin button-blue {
+    display: inline-block;
+    text-align: center;
+    color: $white;
+    background-color: $accent;
+    border: 1px solid $white;
+    border-radius: 4px;
+}
+
+@mixin button-white {
+    display: inline-block;
+    text-align: center;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: 4px;
+}

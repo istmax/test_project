@@ -1,0 +1,76 @@
+.about {
+    background-image: url(../img/hero_bgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        padding: 17% 0;
+        max-width: 780px;
+    }
+
+    &__info {
+        line-height: 24px;
+    }
+
+    &__list {
+        margin-bottom: $big;
+        line-height: 24px;
+    }
+    
+    .list-item::before {
+        content: "-"
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $standard;
+    }
+}
+
+.heading {
+    margin-bottom: 15%;
+    font-family: $bold;
+    font-size: 48px;
+
+    &-accent {
+        color: $accent;
+    }
+}
+
+.button-blue {
+    @include button-blue;
+    padding: 15px 10px;
+    width: 180px;
+    transition:
+        background-color $animate,
+        border-color $animate;
+}
+
+.button-blue:hover {
+    background-color: $hover-black;
+    border-color: $hover-black;
+    transition:
+        background-color $animate,
+        border-color $animate;
+}
+
+.button-white {
+    @include button-white;
+    padding: 15px 10px;
+    width: 180px;
+    transition:
+        color $animate,
+        background-color $animate,
+        border-color $animate;
+}
+
+.button-white:hover {
+    color: $white;
+    background-color: $hover-black;
+    border-color: $hover-black;
+    transition:
+        color $animate,
+        background-color $animate,
+        border-color $animate;
+}

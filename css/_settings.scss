@@ -1,0 +1,61 @@
+@import "_vars.scss";
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 7px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #3d4050;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: 5px;
+    border: 1px solid $accent;
+}
+
+html {
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+    min-width: 320px;
+	font-family: "Lato Regular", sans-serif;
+    background-color: #272733;
+    color: $black;
+    scrollbar-width: thin;
+    scrollbar-color: $accent #3d4050;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+    color: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}

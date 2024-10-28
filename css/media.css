@@ -1,0 +1,73 @@
+@media screen and (max-width: 1170px) {
+  .checklist {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .checklist__dots {
+    display: none;
+  }
+  .add-file-row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .input-file span {
+    padding: 15px 25% 12px 34%;
+    background-position: 29% center;
+  }
+  .header__menu {
+    gap: 15px;
+    justify-content: center;
+  }
+  .header__wrapper {
+    justify-content: center;
+    gap: 15px;
+  }
+  .about__wrapper {
+    padding: 40% 0 20%;
+    max-width: 780px;
+    text-align: center;
+  }
+  .about__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .heading {
+    margin-bottom: 15%;
+    font-family: "Lato Bold";
+    font-size: 30px;
+  }
+  .order__wrapper {
+    text-align: center;
+    padding: 75px 0;
+  }
+  .footer__list {
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .footer__wrapper {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .input-file span {
+    padding: 15px 25% 12px 34%;
+    background-position: 29% center;
+  }
+  .header__menu {
+    gap: 15px;
+  }
+}/*# sourceMappingURL=media.css.map */

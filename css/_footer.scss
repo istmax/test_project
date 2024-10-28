@@ -1,0 +1,74 @@
+.footer {
+    color: $white;
+    background-color: #3d4050;
+    font-size: 13px;
+
+    &__wrapper {
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        padding: 0 50px;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+
+    &__item {
+        padding: 3px 0 3px 30px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        color: $gray;
+    }
+
+    &__img-1 {
+        background-image: url(../img/footer-img-1.png);
+    }
+
+    &__img-2 {
+        background-image: url(../img/footer-img-2.png);  
+    }
+
+    &__img-3 {
+        background-image: url(../img/footer-img-3.png);    
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 38px;
+    }
+
+    &__img-4 {
+        background-image: url(../img/footer-img-4.png);
+    }
+
+    &__img-5 {
+        background-image: url(../img/footer-img-5.png);  
+    }
+
+    &__link::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.contacts-elem {
+    padding-left: 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
